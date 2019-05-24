@@ -14,7 +14,12 @@ export default {
         content: '273389259899-cjflhfg1s347huh7ulv3oug8b9bc0nuk.apps.googleusercontent.com' // prettier-ignore
       }
     },
-    link: {},
+    link: {
+      googleFonts: {
+        href: 'https://fonts.googleapis.com/css?family=Montserrat:400,900|Saira+Extra+Condensed&display=swap', // prettier-ignore
+        rel: 'stylesheet'
+      }
+    },
     script: {
       googlePlatformLibrary: {
         src: 'https://apis.google.com/js/platform.js',
@@ -25,7 +30,7 @@ export default {
     htmlAttr: {},
     bodyAttr: {},
     noscript: {
-      default: 'This is content for browsers with no JS (or disabled JS)'
+      default: 'Your browser does not support JavaScript.'
     }
   }
 };

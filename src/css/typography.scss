@@ -1,5 +1,15 @@
 @import '~rfs/scss';
 
+// Fonts
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-saira {
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+// Sizes
 $font-size-base: 0.875rem;
 
 .display-xxl {
