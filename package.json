@@ -1,10 +1,20 @@
 {
   "name": "idle-talk",
   "version": "0.0.1",
+  "homepage": "https://idle-talk.surge.sh",
   "description": "Keep calm and chat on",
   "productName": "Idle Talk",
   "cordovaId": "",
-  "author": "SungmanYou <sungman.you@gmail.com>",
+  "author": {
+    "name": "Sungman You",
+    "email": "sungman.you@gmail.com",
+    "url": "https://github.com/SungmanYou"
+  },
+  "bugs": {
+    "url": "https://github.com/SungmanYou/idle-talk/issues",
+    "email": "sungman.you@gmail.com"
+  },
+  "repository": "github:SungmanYou/idle-talk",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
