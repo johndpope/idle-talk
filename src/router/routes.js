@@ -1,9 +1,14 @@
+import { Platform } from 'quasar';
+
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MyLayout.vue'),
+    component: () => Platform.is.mobile
+      ? import('layouts/MobileDefault.vue')
+      : import('layouts/DesktopDefault.vue'),
     children: [
       {
+        name: 'RouteWelcome',
         path: '',
         component: () => import('pages/Welcome.vue'),
         meta: {
@@ -11,6 +16,7 @@ const routes = [
         }
       },
       {
+        name: 'RouteChatRoom',
         path: 'chat',
         component: () => import('pages/ChatRoom.vue'),
         meta: {
@@ -18,6 +24,7 @@ const routes = [
         }
       },
       {
+        name: 'RouteLogin',
         path: 'login',
         component: () => import('pages/Login.vue'),
         meta: {
@@ -25,6 +32,7 @@ const routes = [
         }
       },
       {
+        name: 'RouteAbout',
         path: 'about',
         component: () => import('pages/About.vue'),
         meta: {
@@ -32,6 +40,7 @@ const routes = [
         }
       },
       {
+        name: 'RouteSettings',
         path: 'settings',
         component: () => import('pages/Settings.vue'),
         meta: {
@@ -45,6 +54,7 @@ const routes = [
 // Always leave this as last one
 if (process.env.MODE !== 'ssr') {
   routes.push({
+    name: 'RouteError404',
     path: '*',
     component: () => import('pages/Error404.vue')
   });
