@@ -8,12 +8,7 @@
 export default {
   name: 'App',
   meta: {
-    meta: {
-      googleSignInClientId: {
-        name: 'google-signin-client_id',
-        content: '273389259899-cjflhfg1s347huh7ulv3oug8b9bc0nuk.apps.googleusercontent.com' // prettier-ignore
-      }
-    },
+    meta: {},
     link: {
       googleFonts: {
         // Montserrat - 400, 900
@@ -22,13 +17,7 @@ export default {
         rel: 'stylesheet'
       }
     },
-    script: {
-      googlePlatformLibrary: {
-        src: 'https://apis.google.com/js/platform.js',
-        async: true,
-        defer: true
-      }
-    },
+    script: {},
     htmlAttr: {},
     bodyAttr: {},
     noscript: {
