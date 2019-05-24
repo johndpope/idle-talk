@@ -1,23 +1,41 @@
 <template>
-  <q-page padding>
-    <h1>
-      Welcome!!
-    </h1>
-    <q-btn
-      color="primary"
-      label="Go to chatroom"
-      :to="{ name: 'RouteChatRoom' }"
-    />
-    <q-btn
-      color="primary"
-      label="Go to login"
-      :to="{ name: 'RouteLogin' }"
-    />
-    <q-btn
-      color="primary"
-      label="Go to about"
-      :to="{ name: 'RouteAbout' }"
-    />
+  <q-page
+    padding
+    class="row justify-center items-center"
+  >
+    <q-card
+      flat
+      class="max-w-xs"
+    >
+      <q-card-section align="center">
+        <h1 class="display-xxl font-saira">
+          Idle Talk
+        </h1>
+        <h3 class="font-montserrat text-uppercase">
+          Keep calm and chat on
+        </h3>
+      </q-card-section>
+      <q-separator inset />
+      <q-card-actions
+        align="center"
+        vertical
+      >
+        <q-btn
+          flat
+          size="xl"
+          :to="{ name: 'RouteAbout' }"
+        >
+          About
+        </q-btn>
+        <q-btn
+          flat
+          size="xl"
+          :to="{ name: $store.state.auth.authenticated ? 'RouteChatRoom' : 'RouteLogin' }"
+        >
+          {{ $store.state.auth.authenticated ? 'Join chat' : 'Login' }}
+        </q-btn>
+      </q-card-actions>
+    </q-card>
   </q-page>
 </template>
 
