@@ -9,7 +9,8 @@ module.exports = function (ctx) {
     ],
     css: [
       'app.styl',
-      'typography.scss'
+      'typography.scss',
+      'spacing.scss',
     ],
     extras: [
       'ionicons-v4',

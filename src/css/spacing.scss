@@ -1,0 +1,37 @@
+// xs	599px
+// sm	1023px
+// md	1439px
+// lg	1919px
+// xl	Infinite
+
+.max-w-xs {
+  max-width: 599px;
+}
+.max-w-sm {
+  max-width: 1023px;
+}
+.max-w-md {
+  max-width: 1439px;
+}
+.max-w-lg {
+  max-width: 1919px;
+}
+.max-w-xl {
+  max-width: 100%;
+}
+
+.min-w-xs {
+  min-width: 599px;
+}
+.min-w-sm {
+  min-width: 1023px;
+}
+.min-w-md {
+  min-width: 1439px;
+}
+.min-w-lg {
+  min-width: 1919px;
+}
+.min-w-xl {
+  min-width: 100%;
+}
