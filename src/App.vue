@@ -16,6 +16,8 @@ export default {
     },
     link: {
       googleFonts: {
+        // Montserrat - 400, 900
+        // Saira Extra Condensed - 400
         href: 'https://fonts.googleapis.com/css?family=Montserrat:400,900|Saira+Extra+Condensed&display=swap', // prettier-ignore
         rel: 'stylesheet'
       }
