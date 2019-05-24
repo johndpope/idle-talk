@@ -207,3 +207,5 @@ yarn-error.log*
 
 ### CREDENTIALS ###
 .credentials.js
+.env.dev
+.env.prod
