@@ -1,0 +1,71 @@
+@import '~rfs/scss';
+
+$font-size-base: 0.875rem;
+
+.display-xxl {
+  @include rfs($font-size-base * 5);
+}
+.display-xl {
+  @include rfs($font-size-base * 4.5);
+}
+.display-lg {
+  @include rfs($font-size-base * 4.25);
+}
+.display-1 {
+  @include rfs($font-size-base * 4);
+}
+.display-2 {
+  @include rfs($font-size-base * 3.75);
+}
+.display-3 {
+  @include rfs($font-size-base * 3.5);
+}
+.display-4 {
+  @include rfs($font-size-base * 3.25);
+}
+.display-5 {
+  @include rfs($font-size-base * 3);
+}
+.display-6 {
+  @include rfs($font-size-base * 2.75);
+}
+
+h1,
+.h1 {
+  @include rfs($font-size-base * 2.5);
+}
+h2,
+.h2 {
+  @include rfs($font-size-base * 2.25);
+}
+h3,
+.h3 {
+  @include rfs($font-size-base * 2);
+}
+h4,
+.h4 {
+  @include rfs($font-size-base * 1.75);
+}
+h5,
+.h5 {
+  @include rfs($font-size-base * 1.5);
+}
+h6,
+.h6 {
+  @include rfs($font-size-base * 1.25);
+}
+
+.text-lead {
+  @include rfs($font-size-base * 1.1);
+}
+
+p,
+span,
+a,
+b,
+strong,
+u,
+em,
+.text-base {
+  @include rfs($font-size-base * 1);
+}
