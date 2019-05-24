@@ -9,7 +9,7 @@ import user from './user';
 
 Vue.use(Vuex);
 
-export default async function (/* { ssrContext } */) {
+export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: { auth, chat, user },
     strict: process.env.DEV

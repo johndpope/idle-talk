@@ -20,7 +20,11 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-2">
+    <q-drawer
+      v-model="leftDrawerOpen"
+      bordered
+      content-class="bg-grey-2"
+    >
       <q-list>
         <q-item-label header>Essential Links</q-item-label>
         <q-item
@@ -103,13 +107,13 @@
 </template>
 
 <script>
-import { openURL } from "quasar";
+import { openURL } from 'quasar';
 
 export default {
-  name: "MyLayout",
+  name: 'MyLayout',
   data() {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop
+      leftDrawerOpen: false
     };
   },
   methods: {

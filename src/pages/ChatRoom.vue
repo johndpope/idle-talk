@@ -1,13 +1,12 @@
 <template>
   <q-page padding>
-    <!-- content -->
   </q-page>
 </template>
 
 <script>
 export default {
-  // name: 'PageName',
-}
+  name: 'PageChatRoom'
+};
 </script>
 
 <style>

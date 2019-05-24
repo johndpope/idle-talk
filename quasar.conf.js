@@ -4,7 +4,8 @@ module.exports = function (ctx) {
   return {
     boot: [
       'i18n',
-      'axios'
+      'axios',
+      'router'
     ],
     css: [
       'app.styl',
