@@ -1,7 +1,7 @@
 <template>
   <q-page
     padding
-    class="row justify-center items-center"
+    class="column items-center justify-center"
   >
     <q-card
       flat
@@ -16,23 +16,22 @@
         </h3>
       </q-card-section>
       <q-separator inset />
-      <q-card-actions
-        align="center"
-        vertical
-      >
-        <q-btn
-          flat
-          size="xl"
-          :to="{ name: 'RouteAbout' }"
-        >
-          About
-        </q-btn>
+      <q-card-actions align="center">
+
         <q-btn
           flat
           size="xl"
           :to="{ name: $store.state.auth.authenticated ? 'RouteChatRoom' : 'RouteLogin' }"
         >
           {{ $store.state.auth.authenticated ? 'Join chat' : 'Login' }}
+        </q-btn>
+      </q-card-actions>
+      <q-card-actions align="center">
+        <q-btn
+          flat
+          :to="{ name: 'RouteAbout' }"
+        >
+          About
         </q-btn>
       </q-card-actions>
     </q-card>
