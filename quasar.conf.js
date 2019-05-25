@@ -2,6 +2,10 @@
 
 module.exports = function (ctx) {
   return {
+    htmlVariables: {
+      googleSiteVerification: 'w471MZfU0ukSdtBp8u3K674Co5Kpe9aIiuj5jEp5X6g',
+      googleSignInClientID: '273389259899-cjflhfg1s347huh7ulv3oug8b9bc0nuk.apps.googleusercontent.com',
+    },
     boot: [
       'i18n',
       'axios',
@@ -9,6 +13,7 @@ module.exports = function (ctx) {
     ],
     css: [
       'app.styl',
+      'colors.scss',
       'typography.scss',
       'spacing.scss',
     ],
