@@ -3,12 +3,6 @@
   <head>
     <title><%= htmlWebpackPlugin.options.productName %></title>
 
-    <!-- Validating website ownership for Google Sign In -->
-    <meta
-      name="google-site-verification"
-      content="w471MZfU0ukSdtBp8u3K674Co5Kpe9aIiuj5jEp5X6g"
-    />
-
     <meta charset="utf-8" />
     <meta
       name="description"
@@ -20,6 +14,29 @@
       name="viewport"
       content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width<% if (htmlWebpackPlugin.options.ctx.mode.cordova) { %>, viewport-fit=cover<% } %>"
     />
+
+    <!-- Validating website ownership for Google Sign In -->
+    <meta
+      name="google-site-verification"
+      content="<%= htmlWebpackPlugin.options.googleSiteVerification %>"
+    />
+
+    <!-- Required meta for Google Sign In -->
+    <meta
+      name="google-signin-client_id"
+      content="<%= htmlWebpackPlugin.options.googleSignInClientID %>"
+    />
+
+    <!-- Google Fonts: Montserrat - 400, 900 & Saira Extra Condensed - 400 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Saira+Extra+Condensed&display=swap"
+    />
+
+    <!-- Google Platform Library -->
+    <script src="https://apis.google.com/js/api:client.js" async defer></script>
+
+    <!-- Icons -->
     <link rel="icon" type="image/png" href="statics/app-logo-128x128.png" />
     <link
       rel="icon"
